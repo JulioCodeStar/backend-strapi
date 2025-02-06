@@ -1,0 +1,33 @@
+{
+  "name": "backed-content",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Strapi application",
+  "scripts": {
+    "build": "strapi build",
+    "deploy": "strapi deploy",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/plugin-cloud": "5.7.0",
+    "@strapi/plugin-graphql": "^5.7.0",
+    "@strapi/plugin-seo": "^2.0.4",
+    "@strapi/plugin-users-permissions": "5.7.0",
+    "@strapi/provider-upload-cloudinary": "^5.7.0",
+    "@strapi/strapi": "5.7.0",
+    "mysql2": "3.9.8",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "styled-components": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=22.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "68213b60-ca1f-4a22-8b5e-3f579a7d7143"
+  }
+}

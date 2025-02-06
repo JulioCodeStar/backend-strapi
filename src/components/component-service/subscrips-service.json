@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_component_service_subscrips_services",
+  "info": {
+    "displayName": "SubscripsService"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "List": {
+      "displayName": "List-Img",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.list-img"
+    }
+  }
+}

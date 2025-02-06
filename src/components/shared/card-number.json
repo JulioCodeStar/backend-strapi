@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_card_numbers",
+  "info": {
+    "displayName": "Card-number",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "count": {
+      "type": "integer",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

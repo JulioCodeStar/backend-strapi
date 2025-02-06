@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_component_service_process_services",
+  "info": {
+    "displayName": "ProcessService",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Card": {
+      "displayName": "CardProceso",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.card-proceso"
+    },
+    "span": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

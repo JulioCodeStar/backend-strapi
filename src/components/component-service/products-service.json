@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_component_service_products_services",
+  "info": {
+    "displayName": "ProductsService"
+  },
+  "options": {},
+  "attributes": {
+    "span": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "Producto": {
+      "displayName": "ProductCard",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.product-card"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_shared_card_contacts",
+  "info": {
+    "displayName": "Card-contact"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "list": {
+      "displayName": "Title-Item",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.title-item"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_shared_card_procesos",
+  "info": {
+    "displayName": "CardProceso"
+  },
+  "options": {},
+  "attributes": {
+    "count": {
+      "type": "string",
+      "required": true,
+      "default": "01"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

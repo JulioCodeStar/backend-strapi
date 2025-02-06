@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_component_home_card_features",
+  "info": {
+    "displayName": "CardFeatures"
+  },
+  "options": {},
+  "attributes": {
+    "Card": {
+      "displayName": "Card_img_title_description",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.card-img-title-description"
+    }
+  }
+}

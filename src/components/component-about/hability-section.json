@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_component_about_hability_sections",
+  "info": {
+    "displayName": "HabilitySection"
+  },
+  "options": {},
+  "attributes": {
+    "span": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "Porcentaje": {
+      "displayName": "Porcentaje",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.porcentaje"
+    },
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

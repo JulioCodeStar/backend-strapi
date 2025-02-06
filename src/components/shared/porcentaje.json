@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_porcentajes",
+  "info": {
+    "displayName": "Porcentaje"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "count": {
+      "type": "biginteger",
+      "default": "100",
+      "required": true
+    },
+    "paragraph": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

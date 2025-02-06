@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "contacts",
+  "info": {
+    "singularName": "contact",
+    "pluralName": "contacts",
+    "displayName": "Contact"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ContactDynamic": {
+      "type": "dynamiczone",
+      "components": [
+        "component-contact.map-section",
+        "component-contact.info-section",
+        "component-contact.form-section"
+      ],
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.seo"
+    }
+  }
+}

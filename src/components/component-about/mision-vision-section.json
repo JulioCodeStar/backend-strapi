@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_component_about_mision_vision_sections",
+  "info": {
+    "displayName": "MisionVisionSection"
+  },
+  "options": {},
+  "attributes": {
+    "span": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "imgs": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "Card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.card-img-title-description"
+    }
+  }
+}

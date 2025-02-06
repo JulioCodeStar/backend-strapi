@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_component_contact_map_sections",
+  "info": {
+    "displayName": "MapSection"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "Maps": {
+      "displayName": "Maps",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.maps"
+    }
+  }
+}

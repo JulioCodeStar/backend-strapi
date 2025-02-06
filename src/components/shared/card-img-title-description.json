@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_shared_card_img_title_descriptions",
+  "info": {
+    "displayName": "Card_img_title_description",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "img": {
+      "allowedTypes": [
+        "files",
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

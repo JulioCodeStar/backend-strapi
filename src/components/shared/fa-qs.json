@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_fa_qs",
+  "info": {
+    "displayName": "FAQs",
+    "icon": "filter"
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "answer": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_component_home_about_secions",
+  "info": {
+    "displayName": "AboutSecion"
+  },
+  "options": {},
+  "attributes": {
+    "span": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "List": {
+      "displayName": "List-Item",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.list-item"
+    },
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

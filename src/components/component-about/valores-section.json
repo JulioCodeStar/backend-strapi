@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_component_about_valores_sections",
+  "info": {
+    "displayName": "ValoresSection",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "span": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "List": {
+      "displayName": "List-Item-Description",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.list-item-description"
+    },
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

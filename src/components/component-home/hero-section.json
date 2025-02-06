@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_component_home_hero_sections",
+  "info": {
+    "displayName": "HeroSection"
+  },
+  "options": {},
+  "attributes": {
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "span": {
+      "type": "string",
+      "required": true
+    },
+    "title_1": {
+      "type": "string",
+      "required": true
+    },
+    "title_2": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "Button": {
+      "displayName": "Button",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.button"
+    }
+  }
+}

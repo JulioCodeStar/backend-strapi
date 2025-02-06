@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_component_about_info_sections",
+  "info": {
+    "displayName": "InfoSection"
+  },
+  "options": {},
+  "attributes": {
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "span": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "des": {
+      "type": "text",
+      "required": true
+    },
+    "List": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.list-item"
+    }
+  }
+}

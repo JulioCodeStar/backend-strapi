@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_component_contact_form_sections",
+  "info": {
+    "displayName": "FormSection"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "paragraph": {
+      "type": "string",
+      "required": true
+    },
+    "Card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.card-img-title-description"
+    },
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "List": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.list-item-description"
+    }
+  }
+}

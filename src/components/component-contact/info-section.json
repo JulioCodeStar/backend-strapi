@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_component_contact_info_sections",
+  "info": {
+    "displayName": "InfoSection"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "Card": {
+      "displayName": "Card-contact",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.card-contact"
+    }
+  }
+}

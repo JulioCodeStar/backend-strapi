@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_shared_maps",
+  "info": {
+    "displayName": "Maps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "List": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.list-item-description"
+    },
+    "mapa_url": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_list_imgs",
+  "info": {
+    "displayName": "List-Img"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "item": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

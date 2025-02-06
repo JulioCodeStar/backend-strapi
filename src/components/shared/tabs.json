@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_shared_tabs",
+  "info": {
+    "displayName": "Tabs",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "List": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.list-item-description"
+    },
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

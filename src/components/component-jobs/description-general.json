@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_component_jobs_description_generals",
+  "info": {
+    "displayName": "DescriptionGeneral",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "span": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

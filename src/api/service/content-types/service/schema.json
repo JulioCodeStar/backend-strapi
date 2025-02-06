@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "Service",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "string",
+      "required": true
+    },
+    "SectionDynamic": {
+      "type": "dynamiczone",
+      "components": [
+        "component-service.subscrips-service",
+        "component-service.products-service",
+        "component-service.process-service",
+        "component-service.hero-section",
+        "component-service.about-secion",
+        "component-home.faqs-section",
+        "component-home.team-section"
+      ],
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.seo"
+    }
+  }
+}

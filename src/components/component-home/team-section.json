@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_component_home_team_sections",
+  "info": {
+    "displayName": "TeamSection"
+  },
+  "options": {},
+  "attributes": {
+    "span": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "Card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.card-img-title-description"
+    }
+  }
+}

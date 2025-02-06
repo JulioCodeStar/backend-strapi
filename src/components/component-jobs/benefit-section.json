@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_component_jobs_benefit_sections",
+  "info": {
+    "displayName": "FeaturesSection",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "span": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text",
+      "required": true
+    },
+    "Card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.card-img-title-description"
+    }
+  }
+}

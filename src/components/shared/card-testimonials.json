@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_shared_card_testimonials",
+  "info": {
+    "displayName": "Card-testimonials",
+    "icon": "earth"
+  },
+  "options": {},
+  "attributes": {
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "services": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

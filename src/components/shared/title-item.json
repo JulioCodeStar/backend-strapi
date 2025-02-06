@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_title_items",
+  "info": {
+    "displayName": "Title-Item"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "item": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

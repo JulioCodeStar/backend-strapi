@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_component_home_choose_sections",
+  "info": {
+    "displayName": "ChooseSection"
+  },
+  "options": {},
+  "attributes": {
+    "span": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "List": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.card-img-title-description"
+    },
+    "img_background": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Card": {
+      "displayName": "Card-number",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.card-number"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_shared_product_cards",
+  "info": {
+    "displayName": "ProductCard"
+  },
+  "options": {},
+  "attributes": {
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "tiempo": {
+      "type": "text",
+      "required": true
+    },
+    "paragraph": {
+      "type": "text",
+      "required": true
+    },
+    "List": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.list-item"
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
