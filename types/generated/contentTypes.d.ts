@@ -583,7 +583,7 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
       ]
     > &
       Schema.Attribute.Required;
-    seo: Schema.Attribute.Component<'shared.seo', true>;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     slug: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
