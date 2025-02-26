@@ -121,6 +121,16 @@ export interface ComponentHomeAboutSecion extends Struct.ComponentSchema {
   };
 }
 
+export interface ComponentHomeBrandSection extends Struct.ComponentSchema {
+  collectionName: 'components_component_home_brand_sections';
+  info: {
+    displayName: 'BrandSection';
+  };
+  attributes: {
+    Brand: Schema.Attribute.Component<'shared.brand', true>;
+  };
+}
+
 export interface ComponentHomeCardFeatures extends Struct.ComponentSchema {
   collectionName: 'components_component_home_card_features';
   info: {
@@ -142,6 +152,38 @@ export interface ComponentHomeChooseSection extends Struct.ComponentSchema {
       Schema.Attribute.Required;
     List: Schema.Attribute.Component<'shared.card-img-title-description', true>;
     span: Schema.Attribute.String & Schema.Attribute.Required;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface ComponentHomeExhibicionSection extends Struct.ComponentSchema {
+  collectionName: 'components_component_home_exhibicion_sections';
+  info: {
+    displayName: 'ExhibicionSection';
+  };
+  attributes: {
+    Card: Schema.Attribute.Component<'shared.img-title-description-list', true>;
+    descripcion: Schema.Attribute.Text & Schema.Attribute.Required;
+    span: Schema.Attribute.String & Schema.Attribute.Required;
+    title1: Schema.Attribute.String & Schema.Attribute.Required;
+    title2: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface ComponentHomeExtranjeroSection extends Struct.ComponentSchema {
+  collectionName: 'components_component_home_extranjero_sections';
+  info: {
+    displayName: 'ExtranjeroSection';
+  };
+  attributes: {
+    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    img_1: Schema.Attribute.Media<'images' | 'files'> &
+      Schema.Attribute.Required;
+    img_2: Schema.Attribute.Media<'images' | 'files'>;
+    img_3: Schema.Attribute.Media<'images' | 'files'> &
+      Schema.Attribute.Required;
+    span: Schema.Attribute.String & Schema.Attribute.Required;
+    span_img: Schema.Attribute.String & Schema.Attribute.Required;
     title: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
@@ -322,6 +364,20 @@ export interface ComponentServiceSubscripsService
   };
 }
 
+export interface SharedBrand extends Struct.ComponentSchema {
+  collectionName: 'components_shared_brands';
+  info: {
+    displayName: 'brand';
+    icon: 'write';
+  };
+  attributes: {
+    description: Schema.Attribute.String & Schema.Attribute.Required;
+    logo: Schema.Attribute.Media<'images' | 'files'> &
+      Schema.Attribute.Required;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface SharedButton extends Struct.ComponentSchema {
   collectionName: 'components_shared_buttons';
   info: {
@@ -428,6 +484,19 @@ export interface SharedFaQs extends Struct.ComponentSchema {
   attributes: {
     answer: Schema.Attribute.String & Schema.Attribute.Required;
     question: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface SharedImgTitleDescriptionList extends Struct.ComponentSchema {
+  collectionName: 'components_shared_img_title_description_lists';
+  info: {
+    displayName: 'Img-title-description-list';
+  };
+  attributes: {
+    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    img: Schema.Attribute.Media<'images' | 'files'> & Schema.Attribute.Required;
+    List: Schema.Attribute.Component<'shared.list-item', true>;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
 
@@ -595,8 +664,11 @@ declare module '@strapi/strapi' {
       'component-contact.info-section': ComponentContactInfoSection;
       'component-contact.map-section': ComponentContactMapSection;
       'component-home.about-secion': ComponentHomeAboutSecion;
+      'component-home.brand-section': ComponentHomeBrandSection;
       'component-home.card-features': ComponentHomeCardFeatures;
       'component-home.choose-section': ComponentHomeChooseSection;
+      'component-home.exhibicion-section': ComponentHomeExhibicionSection;
+      'component-home.extranjero-section': ComponentHomeExtranjeroSection;
       'component-home.faqs-section': ComponentHomeFaqsSection;
       'component-home.hero-section': ComponentHomeHeroSection;
       'component-home.services-section': ComponentHomeServicesSection;
@@ -610,6 +682,7 @@ declare module '@strapi/strapi' {
       'component-service.process-service': ComponentServiceProcessService;
       'component-service.products-service': ComponentServiceProductsService;
       'component-service.subscrips-service': ComponentServiceSubscripsService;
+      'shared.brand': SharedBrand;
       'shared.button': SharedButton;
       'shared.card-contact': SharedCardContact;
       'shared.card-img-title-description': SharedCardImgTitleDescription;
@@ -618,6 +691,7 @@ declare module '@strapi/strapi' {
       'shared.card-proceso': SharedCardProceso;
       'shared.card-testimonials': SharedCardTestimonials;
       'shared.fa-qs': SharedFaQs;
+      'shared.img-title-description-list': SharedImgTitleDescriptionList;
       'shared.list-img': SharedListImg;
       'shared.list-item': SharedListItem;
       'shared.list-item-description': SharedListItemDescription;

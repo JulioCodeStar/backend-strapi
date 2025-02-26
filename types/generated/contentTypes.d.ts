@@ -477,6 +477,7 @@ export interface ApiContactContact extends Struct.SingleTypeSchema {
 export interface ApiHomeHome extends Struct.SingleTypeSchema {
   collectionName: 'homes';
   info: {
+    description: '';
     displayName: 'Home';
     pluralName: 'homes';
     singularName: 'home';
@@ -498,6 +499,9 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
         'component-home.choose-section',
         'component-home.card-features',
         'component-home.about-secion',
+        'component-home.brand-section',
+        'component-home.extranjero-section',
+        'component-home.exhibicion-section',
       ]
     > &
       Schema.Attribute.Required;

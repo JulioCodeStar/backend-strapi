@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_component_home_exhibicion_sections",
+  "info": {
+    "displayName": "ExhibicionSection"
+  },
+  "options": {},
+  "attributes": {
+    "span": {
+      "type": "string",
+      "required": true
+    },
+    "title1": {
+      "type": "string",
+      "required": true
+    },
+    "title2": {
+      "type": "string",
+      "required": true
+    },
+    "descripcion": {
+      "type": "text",
+      "required": true
+    },
+    "Card": {
+      "displayName": "Img-title-description-list",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.img-title-description-list"
+    }
+  }
+}
