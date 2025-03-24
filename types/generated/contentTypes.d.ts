@@ -553,6 +553,60 @@ export interface ApiJobJob extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiReclamoReclamo extends Struct.CollectionTypeSchema {
+  collectionName: 'reclamos';
+  info: {
+    description: '';
+    displayName: 'Reclamos';
+    pluralName: 'reclamos';
+    singularName: 'reclamo';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    accionesProveedor: Schema.Attribute.Text;
+    apellidoConsumidor: Schema.Attribute.String & Schema.Attribute.Required;
+    bienContratado: Schema.Attribute.Text & Schema.Attribute.Required;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    departamento: Schema.Attribute.String & Schema.Attribute.Required;
+    detalleReclamo: Schema.Attribute.Text;
+    direccionProveedor: Schema.Attribute.Text & Schema.Attribute.Required;
+    distrito: Schema.Attribute.String & Schema.Attribute.Required;
+    documentoIdentidad: Schema.Attribute.String & Schema.Attribute.Required;
+    domicilio: Schema.Attribute.Text & Schema.Attribute.Required;
+    email: Schema.Attribute.Email & Schema.Attribute.Required;
+    fecha: Schema.Attribute.DateTime & Schema.Attribute.Required;
+    fechaRespuesta: Schema.Attribute.DateTime;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::reclamo.reclamo'
+    > &
+      Schema.Attribute.Private;
+    menorEdad: Schema.Attribute.Boolean;
+    monto: Schema.Attribute.Decimal;
+    nombreConsumidor: Schema.Attribute.String & Schema.Attribute.Required;
+    nombreProveedor: Schema.Attribute.String & Schema.Attribute.Required;
+    numero: Schema.Attribute.String;
+    padreApoderado: Schema.Attribute.String;
+    pedidoConsumidor: Schema.Attribute.Text & Schema.Attribute.Required;
+    provincia: Schema.Attribute.String & Schema.Attribute.Required;
+    publishedAt: Schema.Attribute.DateTime;
+    rucProveedor: Schema.Attribute.String & Schema.Attribute.Required;
+    telefono: Schema.Attribute.String & Schema.Attribute.Required;
+    tipoDocumento: Schema.Attribute.Enumeration<['dni', 'ce', 'pasaporte']> &
+      Schema.Attribute.Required;
+    tipoReclamo: Schema.Attribute.Enumeration<['reclamo', 'queja']> &
+      Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiServiceService extends Struct.CollectionTypeSchema {
   collectionName: 'services';
   info: {
@@ -1109,6 +1163,7 @@ declare module '@strapi/strapi' {
       'api::contact.contact': ApiContactContact;
       'api::home.home': ApiHomeHome;
       'api::job.job': ApiJobJob;
+      'api::reclamo.reclamo': ApiReclamoReclamo;
       'api::service.service': ApiServiceService;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;

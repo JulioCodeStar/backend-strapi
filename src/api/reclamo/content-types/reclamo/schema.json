@@ -1,0 +1,116 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reclamos",
+  "info": {
+    "singularName": "reclamo",
+    "pluralName": "reclamos",
+    "displayName": "Reclamos",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "numero": {
+      "type": "string",
+      "required": false
+    },
+    "nombreProveedor": {
+      "type": "string",
+      "required": true
+    },
+    "rucProveedor": {
+      "type": "string",
+      "required": true
+    },
+    "direccionProveedor": {
+      "type": "text",
+      "required": true
+    },
+    "nombreConsumidor": {
+      "type": "string",
+      "required": true
+    },
+    "apellidoConsumidor": {
+      "type": "string",
+      "required": true
+    },
+    "domicilio": {
+      "type": "text",
+      "required": true
+    },
+    "distrito": {
+      "type": "string",
+      "required": true
+    },
+    "provincia": {
+      "type": "string",
+      "required": true
+    },
+    "departamento": {
+      "type": "string",
+      "required": true
+    },
+    "tipoDocumento": {
+      "type": "enumeration",
+      "enum": [
+        "dni",
+        "ce",
+        "pasaporte"
+      ],
+      "required": true
+    },
+    "documentoIdentidad": {
+      "type": "string",
+      "required": true
+    },
+    "telefono": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "menorEdad": {
+      "type": "boolean"
+    },
+    "padreApoderado": {
+      "type": "string"
+    },
+    "tipoReclamo": {
+      "type": "enumeration",
+      "enum": [
+        "reclamo",
+        "queja"
+      ],
+      "required": true
+    },
+    "bienContratado": {
+      "type": "text",
+      "required": true
+    },
+    "monto": {
+      "type": "decimal"
+    },
+    "fecha": {
+      "type": "datetime",
+      "required": true
+    },
+    "fechaRespuesta": {
+      "type": "datetime"
+    },
+    "detalleReclamo": {
+      "type": "text"
+    },
+    "pedidoConsumidor": {
+      "type": "text",
+      "required": true
+    },
+    "accionesProveedor": {
+      "type": "text",
+      "required": false
+    }
+  }
+}
