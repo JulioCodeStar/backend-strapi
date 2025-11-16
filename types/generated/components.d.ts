@@ -170,6 +170,19 @@ export interface ComponentHomeExhibicionSection extends Struct.ComponentSchema {
   };
 }
 
+export interface ComponentHomeExitoSection extends Struct.ComponentSchema {
+  collectionName: 'components_component_home_exito_sections';
+  info: {
+    description: '';
+    displayName: 'ExitoSection';
+  };
+  attributes: {
+    label: Schema.Attribute.String & Schema.Attribute.Required;
+    Slide: Schema.Attribute.Component<'shared.slide', true>;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface ComponentHomeExtranjeroSection extends Struct.ComponentSchema {
   collectionName: 'components_component_home_extranjero_sections';
   info: {
@@ -627,6 +640,21 @@ export interface SharedSeo extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedSlide extends Struct.ComponentSchema {
+  collectionName: 'components_shared_slides';
+  info: {
+    description: '';
+    displayName: 'slide';
+  };
+  attributes: {
+    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    img: Schema.Attribute.Media<'images' | 'files'> & Schema.Attribute.Required;
+    label: Schema.Attribute.String & Schema.Attribute.Required;
+    subtitle: Schema.Attribute.String & Schema.Attribute.Required;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface SharedTabs extends Struct.ComponentSchema {
   collectionName: 'components_shared_tabs';
   info: {
@@ -668,6 +696,7 @@ declare module '@strapi/strapi' {
       'component-home.card-features': ComponentHomeCardFeatures;
       'component-home.choose-section': ComponentHomeChooseSection;
       'component-home.exhibicion-section': ComponentHomeExhibicionSection;
+      'component-home.exito-section': ComponentHomeExitoSection;
       'component-home.extranjero-section': ComponentHomeExtranjeroSection;
       'component-home.faqs-section': ComponentHomeFaqsSection;
       'component-home.hero-section': ComponentHomeHeroSection;
@@ -700,6 +729,7 @@ declare module '@strapi/strapi' {
       'shared.porcentaje': SharedPorcentaje;
       'shared.product-card': SharedProductCard;
       'shared.seo': SharedSeo;
+      'shared.slide': SharedSlide;
       'shared.tabs': SharedTabs;
       'shared.title-item': SharedTitleItem;
     }

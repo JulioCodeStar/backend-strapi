@@ -25,7 +25,8 @@
         "component-home.about-secion",
         "component-home.brand-section",
         "component-home.extranjero-section",
-        "component-home.exhibicion-section"
+        "component-home.exhibicion-section",
+        "component-home.exito-section"
       ],
       "required": true
     },

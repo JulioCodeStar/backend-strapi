@@ -502,6 +502,7 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
         'component-home.brand-section',
         'component-home.extranjero-section',
         'component-home.exhibicion-section',
+        'component-home.exito-section',
       ]
     > &
       Schema.Attribute.Required;
